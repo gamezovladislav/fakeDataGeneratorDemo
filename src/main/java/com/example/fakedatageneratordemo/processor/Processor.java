@@ -1,2 +1,8 @@
-package com.example.fakedatageneratordemo.processor;public interface Processor {
+package com.example.fakedatageneratordemo.processor;
+
+public interface Processor {
+
+    void process();
+
+    ProcessorType getType();
 }
