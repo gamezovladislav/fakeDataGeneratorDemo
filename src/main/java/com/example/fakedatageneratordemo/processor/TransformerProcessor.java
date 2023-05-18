@@ -34,7 +34,6 @@ public class TransformerProcessor implements Processor {
                 f = false;
             }
         }
-        in.close();
     }
 
     @Override

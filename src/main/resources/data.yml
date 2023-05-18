@@ -1,0 +1,7 @@
+en:
+  faker:
+    demo:
+      names: ['Henryk Walezy', 'Anna Jagiellonka', 'King Stefan Batory', 'King Zygmunt III Waza', 'Władysław IV Waza', 'Jan II Kazimierz',
+      'Michał Korybut Wiśniowiecki', 'Jan III Sobieski', 'August II Mocny', 'Stanisław I Leszczyński', 'August II Mocny', 'Stanisław I Leszczyński',
+      'August III Sas', 'Stanisław II August']
+      fib: ['2', '3', '5', '8', '13', '21', '34', '55', '89', '144']
