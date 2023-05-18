@@ -14,7 +14,10 @@ public class SimpleProcessor implements Processor {
         print("job.position ", faker.job().position());
         print("job.field    ", faker.job().field());
         print("phone        ", faker.phoneNumber().phoneNumberInternational());
-        print("videoGame    ", faker.videoGame().title() + " (g: " + faker.videoGame().genre() + " , p: ");
+        print("videoGame    ", faker.videoGame().title() + " (g: " + faker.videoGame().genre() + " , p: " + faker.videoGame().platform());
+        print("numerify     ", faker.numerify("kj?h?D?B?S?###FNA"));
+        print("letterify    ", faker.letterify("kj?h?D?B?S?###FNA"));
+        print("bothify      ", faker.bothify("kj?h?D?B?S?###FNA"));
     }
 
     @Override

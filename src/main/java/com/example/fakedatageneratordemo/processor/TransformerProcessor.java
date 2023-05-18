@@ -45,6 +45,7 @@ public class TransformerProcessor implements Processor {
         SqlTransformer<String> transformer =
                 new SqlTransformer.SqlTransformerBuilder<String>()
                         .tableName("Fake_person")
+                        .batch(4)
                         .dialect(SqlDialect.POSTGRES)
                         .build();
         String output = transformer.generate((Schema<String, ?>) schema, 5);
@@ -53,6 +54,7 @@ public class TransformerProcessor implements Processor {
 
     private void csv(Schema<?, ?> schema) {
         CsvTransformer<Object> transformer = CsvTransformer.builder()
+                .separator(" -- ")
                 .header(true)
                 .build();
         String output = transformer.generate((Schema<Object, ?>) schema, 5);
